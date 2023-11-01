@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-4:\\layout\\fragment_camera.xml",
+        "source": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-main-7:\\layout\\fragment_camera.xml"
+    },
+    {
+        "merged": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-4:\\layout\\info_bottom_sheet.xml",
+        "source": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-main-7:\\layout\\info_bottom_sheet.xml"
+    },
+    {
+        "merged": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-4:\\layout\\activity_main.xml",
+        "source": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-main-7:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-4:\\layout\\fragment_explore.xml",
+        "source": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-main-7:\\layout\\fragment_explore.xml"
+    },
+    {
+        "merged": "org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-4:/layout/fragment_find.xml",
+        "source": "org.tensorflow.lite.examples.objectdetection.app-main-7:/layout/fragment_find.xml"
+    },
+    {
+        "merged": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-4:\\layout\\fragment_find.xml",
+        "source": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-main-7:\\layout\\fragment_find.xml"
+    },
+    {
+        "merged": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-4:\\layout\\fragment_read.xml",
+        "source": "G:\\gradle-8.4-all\\gradle-8.4\\daemon\\7.6.2\\org.tensorflow.lite.examples.objectdetection.app-main-7:\\layout\\fragment_read.xml"
+    }
+]
