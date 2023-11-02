@@ -1,9 +1,7 @@
 package org.tensorflow.lite.examples.objectdetection.fragments
 
-import android.content.res.AssetManager
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.graphics.RectF
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -12,10 +10,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import org.tensorflow.lite.examples.objectdetection.R
 import org.tensorflow.lite.examples.objectdetection.ObjectDetectorHelper
-import org.tensorflow.lite.task.gms.vision.detector.Detection
 import java.io.InputStream
-import org.junit.Assert.assertEquals
-import org.tensorflow.lite.support.label.Category
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -59,29 +54,23 @@ class FindFragment : Fragment() {
         val btnTable = view.findViewById<ImageButton>(R.id.btnTable)
 
         btnPerson.setOnClickListener {
-            val bitmap = loadBitmapFromResource(R.drawable.person_transparent)
-
-            objectDetectorHelper.detect(bitmap, 0)
+            objectDetectorHelper.category("person")
         }
         btnChair.setOnClickListener {
-            val bitmap = loadBitmapFromResource(R.drawable.chair_transparent)
 
-            objectDetectorHelper.detect(bitmap, 0)
+            objectDetectorHelper.category("barber chair")
         }
         btnBottle.setOnClickListener {
-            val bitmap  = loadBitmapFromResource(R.drawable.bottle_transparent)
 
-            objectDetectorHelper.detect(bitmap, 0)
+            objectDetectorHelper.category("water bottle")
         }
         btnDesktop.setOnClickListener {
-            val bitmap = loadBitmapFromResource(R.drawable.desktop_transparent)
 
-            objectDetectorHelper.detect(bitmap, 0)
+            objectDetectorHelper.category("desktop computer")
         }
         btnTable.setOnClickListener {
-            val bitmap = loadBitmapFromResource(R.drawable.table_transparent)
 
-            objectDetectorHelper.detect(bitmap, 0)
+            objectDetectorHelper.category("dining table")
         }
 
         return view

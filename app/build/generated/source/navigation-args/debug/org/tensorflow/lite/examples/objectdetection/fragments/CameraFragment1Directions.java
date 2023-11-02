@@ -5,8 +5,8 @@ import androidx.navigation.ActionOnlyNavDirections;
 import androidx.navigation.NavDirections;
 import org.tensorflow.lite.examples.objectdetection.R;
 
-public class CameraFragmentDirections {
-  private CameraFragmentDirections() {
+public class CameraFragment1Directions {
+  private CameraFragment1Directions() {
   }
 
   @NonNull

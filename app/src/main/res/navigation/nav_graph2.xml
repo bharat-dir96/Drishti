@@ -22,7 +22,7 @@
 
     <fragment
         android:id="@+id/camera_fragment"
-        android:name="org.tensorflow.lite.examples.objectdetection.fragments.CameraFragment"
+        android:name="org.tensorflow.lite.examples.objectdetection.fragments.CameraFragment2"
         android:label="CameraFragment" >
 
 

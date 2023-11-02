@@ -34,7 +34,9 @@ class ObjectDetectorHelper(
     var currentModel: Int = 0,    // Current object detection model
     val context: Context,          // Android application context
 
-    val objectDetectorListener: DetectorListener
+    val objectDetectorListener: DetectorListener,
+
+    private var results: MutableList<Detection>? = null
 
 ) {
 
@@ -45,9 +47,9 @@ class ObjectDetectorHelper(
     // will not change, a lazy val would be preferable.
     private var objectDetector: ObjectDetector? = null
     private var gpuSupported = false
-//    private val handler = Handler()
-    private var tts: TextToSpeech? = null
 
+    //    private val handler = Handler()
+    private var tts: TextToSpeech? = null
 
 
     init {
@@ -66,11 +68,12 @@ class ObjectDetectorHelper(
             objectDetectorListener.onInitialized()
 
 
-
-        }.addOnFailureListener{
+        }.addOnFailureListener {
             // Callback when an error occurs during initialization
-            objectDetectorListener.onError("TfLiteVision failed to initialize: "
-                    + it.message)
+            objectDetectorListener.onError(
+                "TfLiteVision failed to initialize: "
+                        + it.message
+            )
         }
     }
 
@@ -88,6 +91,7 @@ class ObjectDetectorHelper(
             }
         })
     }
+
     fun clearObjectDetector() {
         // Method to clear the object detector instance
 
@@ -118,6 +122,7 @@ class ObjectDetectorHelper(
             DELEGATE_CPU -> {
                 // Default
             }
+
             DELEGATE_GPU -> {
                 if (gpuSupported) {
                     baseOptionsBuilder.useGpu()
@@ -125,6 +130,7 @@ class ObjectDetectorHelper(
                     objectDetectorListener.onError("GPU is not supported on this device")
                 }
             }
+
             DELEGATE_NNAPI -> {
                 baseOptionsBuilder.useNnapi()
             }
@@ -146,9 +152,6 @@ class ObjectDetectorHelper(
             // Create the object detector from the specified model and options
             objectDetector =
                 ObjectDetector.createFromFileAndOptions(context, modelName, optionsBuilder.build())
-
-
-
 
         } catch (e: Exception) {
             objectDetectorListener.onError(
@@ -184,7 +187,8 @@ class ObjectDetectorHelper(
                 // Inference time is the difference between the system time at the start and finish of the process
                 var inferenceTime = SystemClock.uptimeMillis()
 
-                val imageProcessor = ImageProcessor.Builder().add(Rot90Op(-imageRotation / 90)).build()
+                val imageProcessor =
+                    ImageProcessor.Builder().add(Rot90Op(-imageRotation / 90)).build()
                 val tensorImage = imageProcessor.process(TensorImage.fromBitmap(image))
 
                 val results = objectDetector?.detect(tensorImage)
@@ -195,9 +199,11 @@ class ObjectDetectorHelper(
                         val categoryLabel = category.label
                         val displayMessage = "Detected: $categoryLabel "
 
-                        // Speak the category label
+                        // Main Function Should Implement here for enabling speak for the specific objects.
 
-                        speakText("यहाँ  एक  "+categoryLabel+" है.")
+
+                        // Speak the category label
+                        speakText("यहाँ  एक  " + categoryLabel + " है.")
 
 
                         // Vibrate the phone for 500 milliseconds (0.5 seconds) after speaking
@@ -222,6 +228,74 @@ class ObjectDetectorHelper(
             }
         }
     }
+
+    fun detect2(image: Bitmap, imageRotation: Int) {
+        // Initialize a coroutine scope for this detection
+        runBlocking {
+
+
+            launch(Dispatchers.Default) {
+
+                val vibrator = context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+
+                if (!TfLiteVision.isInitialized()) {
+                    Log.e(TAG, "detect: TfLiteVision is not initialized yet")
+                    return@launch
+                }
+
+                if (objectDetector == null) {
+                    setupObjectDetector()
+                }
+
+                // Inference time is the difference between the system time at the start and finish of the process
+                var inferenceTime = SystemClock.uptimeMillis()
+
+                val imageProcessor =
+                    ImageProcessor.Builder().add(Rot90Op(-imageRotation / 90)).build()
+                val tensorImage = imageProcessor.process(TensorImage.fromBitmap(image))
+
+                val results = objectDetector?.detect(tensorImage)
+
+                // Vibrate the phone for 500 milliseconds (0.5 seconds) after speaking
+                val vibrationDuration = 50
+                vibrator.vibrate(vibrationDuration.toLong())
+
+                // Delay for a few seconds before processing the next detection
+                delay(2000)
+
+                // Calculate the inference time
+                inferenceTime = SystemClock.uptimeMillis() - inferenceTime
+
+                // Callback with the detection results, inference time, and image dimensions
+                objectDetectorListener.onResults(
+                    results,
+                    inferenceTime,
+                    tensorImage.height,
+                    tensorImage.width
+                )
+            }
+        }
+    }
+
+    fun category(label: String) {
+        results?.let { results ->
+        for (detection in results!!) {
+            for (category in detection.categories) {
+                val categoryLabel = category.label
+                val displayMessage = "Detected: $categoryLabel "
+
+                // Main Function Should Implement here for enabling speak for the specific objects.
+
+                if (categoryLabel == label) {
+                    // Speak the category label
+                    speakText("यहाँ  एक  " + categoryLabel + " है.")
+                }
+            }
+        }
+    }
+}
+
+
 
 //    fun detect(image: Bitmap, imageRotation: Int) {
 //        // Obtain a reference to the Vibrator service
