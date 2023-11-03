@@ -47,6 +47,10 @@ class CameraFragment2 : Fragment(), ObjectDetectorHelper.DetectorListener {
     /** Blocking camera operations are performed using this executor */
     private lateinit var cameraExecutor: ExecutorService
 
+    val findFragment = requireFragmentManager().findFragmentByTag("FindFragment") as FindFragment
+
+    val electronicItemLabels = findFragment.getElectronicItemLabels()
+
     override fun onResume() {
         super.onResume()
         // Make sure that all permissions are still present, since the
@@ -167,8 +171,15 @@ class CameraFragment2 : Fragment(), ObjectDetectorHelper.DetectorListener {
 
         val imageRotation = image.imageInfo.rotationDegrees
         // Pass Bitmap and rotation to the object detector helper for processing and detection
-        objectDetectorHelper.detect2(bitmapBuffer, imageRotation)
+
+
+        objectDetectorHelper.detect2(bitmapBuffer, imageRotation, electronicItemLabels)
     }
+
+    fun getBitmapBuffer(): Bitmap {
+        return bitmapBuffer
+    }
+
 
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)

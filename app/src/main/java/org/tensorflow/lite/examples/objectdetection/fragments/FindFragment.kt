@@ -28,8 +28,17 @@ class FindFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private val TAG = "FindFragment"
 
     private lateinit var objectDetectorHelper: ObjectDetectorHelper
+
+    val cameraFragment2 = requireFragmentManager().findFragmentByTag("CameraFragment") as CameraFragment2
+    val bitmapBuffer = cameraFragment2.getBitmapBuffer()
+
+    // Define a variable to hold electronicItemLabels
+    private var electronicItemLabels: Set<String> = emptySet()
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,27 +63,31 @@ class FindFragment : Fragment() {
         val btnTable = view.findViewById<ImageButton>(R.id.btnTable)
 
         btnPerson.setOnClickListener {
-            objectDetectorHelper.category("person")
+
         }
         btnChair.setOnClickListener {
 
-            objectDetectorHelper.category("barber chair")
         }
         btnBottle.setOnClickListener {
 
-            objectDetectorHelper.category("water bottle")
         }
         btnDesktop.setOnClickListener {
+            electronicItemLabels = setOf("tv", "laptop")
 
-            objectDetectorHelper.category("desktop computer")
+            objectDetectorHelper.detect2(bitmapBuffer, 0,electronicItemLabels)
+
         }
         btnTable.setOnClickListener {
 
-            objectDetectorHelper.category("dining table")
         }
 
         return view
 
+    }
+
+
+    fun getElectronicItemLabels(): Set<String> {
+        return electronicItemLabels
     }
 
     // Define a function to load a Bitmap from a resource ID

@@ -36,7 +36,11 @@ class ObjectDetectorHelper(
 
     val objectDetectorListener: DetectorListener,
 
-    private var results: MutableList<Detection>? = null
+    private var results: MutableList<Detection>? = null,
+
+    val vibrator: Vibrator = context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
+
+
 
 ) {
 
@@ -229,14 +233,12 @@ class ObjectDetectorHelper(
         }
     }
 
-    fun detect2(image: Bitmap, imageRotation: Int) {
+    fun detect2(image: Bitmap, imageRotation: Int, labelsToDetect: Set<String>) {
         // Initialize a coroutine scope for this detection
         runBlocking {
 
 
             launch(Dispatchers.Default) {
-
-                val vibrator = context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
 
                 if (!TfLiteVision.isInitialized()) {
                     Log.e(TAG, "detect: TfLiteVision is not initialized yet")
@@ -256,12 +258,24 @@ class ObjectDetectorHelper(
 
                 val results = objectDetector?.detect(tensorImage)
 
-                // Vibrate the phone for 500 milliseconds (0.5 seconds) after speaking
-                val vibrationDuration = 50
-                vibrator.vibrate(vibrationDuration.toLong())
+                for (detection in results!!) {
+                    for (category in detection.categories) {
+                        val categoryLabel = category.label
+                        val displayMessage = "Detected: $categoryLabel "
+                        if (labelsToDetect.contains(categoryLabel)) {
+                            // Speak the category label
+                            speakText("यहाँ  एक  $categoryLabel है.")
+                        }
 
-                // Delay for a few seconds before processing the next detection
-                delay(2000)
+                        // Vibrate the phone for 500 milliseconds (0.5 seconds) after speaking
+                        val vibrationDuration = 50
+                        vibrator.vibrate(vibrationDuration.toLong())
+
+                        // Delay for a few seconds before processing the next detection.
+                        delay(2000)
+                    }
+                }
+
 
                 // Calculate the inference time
                 inferenceTime = SystemClock.uptimeMillis() - inferenceTime
@@ -276,25 +290,6 @@ class ObjectDetectorHelper(
             }
         }
     }
-
-    fun category(label: String) {
-        results?.let { results ->
-        for (detection in results!!) {
-            for (category in detection.categories) {
-                val categoryLabel = category.label
-                val displayMessage = "Detected: $categoryLabel "
-
-                // Main Function Should Implement here for enabling speak for the specific objects.
-
-                if (categoryLabel == label) {
-                    // Speak the category label
-                    speakText("यहाँ  एक  " + categoryLabel + " है.")
-                }
-            }
-        }
-    }
-}
-
 
 
 //    fun detect(image: Bitmap, imageRotation: Int) {
