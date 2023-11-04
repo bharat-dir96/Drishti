@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentContainerView;
@@ -57,12 +58,16 @@ public final class FragmentFindBinding implements ViewBinding {
   @NonNull
   public final LinearLayout tableLayout;
 
+  @NonNull
+  public final TextView txtPerson;
+
   private FragmentFindBinding(@NonNull FrameLayout rootView, @NonNull LinearLayout bottleLayout,
       @NonNull View bottomBar, @NonNull ImageButton btnBottle, @NonNull ImageButton btnChair,
       @NonNull ImageButton btnDesktop, @NonNull ImageButton btnPerson,
       @NonNull ImageButton btnTable, @NonNull LinearLayout chairLayout,
       @NonNull LinearLayout desktopLayout, @NonNull FragmentContainerView fragmentContainer,
-      @NonNull LinearLayout personLayout, @NonNull LinearLayout tableLayout) {
+      @NonNull LinearLayout personLayout, @NonNull LinearLayout tableLayout,
+      @NonNull TextView txtPerson) {
     this.rootView = rootView;
     this.bottleLayout = bottleLayout;
     this.bottomBar = bottomBar;
@@ -76,6 +81,7 @@ public final class FragmentFindBinding implements ViewBinding {
     this.fragmentContainer = fragmentContainer;
     this.personLayout = personLayout;
     this.tableLayout = tableLayout;
+    this.txtPerson = txtPerson;
   }
 
   @Override
@@ -177,9 +183,15 @@ public final class FragmentFindBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txtPerson;
+      TextView txtPerson = ViewBindings.findChildViewById(rootView, id);
+      if (txtPerson == null) {
+        break missingId;
+      }
+
       return new FragmentFindBinding((FrameLayout) rootView, bottleLayout, bottomBar, btnBottle,
           btnChair, btnDesktop, btnPerson, btnTable, chairLayout, desktopLayout, fragmentContainer,
-          personLayout, tableLayout);
+          personLayout, tableLayout, txtPerson);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

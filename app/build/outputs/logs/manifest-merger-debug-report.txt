@@ -35,14 +35,11 @@ MERGED from [androidx.camera:camera-core:1.1.0-beta03] G:\gradle-8.4-all\gradle-
 MERGED from [org.tensorflow:tensorflow-lite-task-vision-play-services:0.4.2] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\4c37172b2d84159a69e01817400ab123\transformed\jetified-tensorflow-lite-task-vision-play-services-0.4.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-tflite-gpu:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c8281cc4f01b9b82861efd7ea454c782\transformed\jetified-play-services-tflite-gpu-16.0.0\AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:18.0.2] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\0c910bba119487bec53c2104b9b3c00f\transformed\jetified-play-services-mlkit-text-recognition-18.0.2\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:2:1-18:12
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\8d445a60e388e76e6b1b85ea6469961b\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-tflite-support:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\295b89df2e5e2321dadfc8ea6cdd1e97\transformed\jetified-play-services-tflite-support-16.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-tflite-java:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\56f2f413926d017ec71d2ed3f1ff0f81\transformed\jetified-play-services-tflite-java-16.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-tflite-impl:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\16ae26aca9ca71419b7b64b511ee68bd\transformed\jetified-play-services-tflite-impl-16.0.0\AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:2:1-18:12
-MERGED from [com.google.mlkit:barcode-scanning-common:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\4599ba7181e977c690fd7b2ba55e8adf\transformed\jetified-barcode-scanning-common-16.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:2:1-18:12
 MERGED from [com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.gms:play-services-base:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\14a3a24bc6051f7d03eb986dff2c89f5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:16:1-24:12
@@ -76,15 +73,15 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] G:\gradle-8
 MERGED from [androidx.test:annotation:1.0.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\255d9f7e754bb1cc839d998744088836\transformed\jetified-annotation-1.0.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.tracing:tracing:1.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\71c1a669ea5ed4b473ba707824db660c\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.2] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\d9b027f221db2952ef69042fb9d1c84a\transformed\exifinterface-1.3.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\e817f1c2238f9f78c5f40b095b0e51be\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2fbbba1268300e6ad2cde9ef2b667b80\transformed\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6658df76047b4bd2d8ec8c379ca34de6\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2bb356dcb8a3d353236fad5682f3cdcb\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:15:1-41:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\aa92c22538955f0af926789b58008dec\transformed\jetified-transport-api-2.2.1\AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.firebase:firebase-components:16.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\f6eb3cd2caa7ed49c10389f47cb790c1\transformed\jetified-firebase-components-16.1.0\AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\bebea103376ed44a065a4e8f6adfb2f8\transformed\jetified-firebase-encoders-json-17.1.0\AndroidManifest.xml:15:1-23:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\e817f1c2238f9f78c5f40b095b0e51be\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2fbbba1268300e6ad2cde9ef2b667b80\transformed\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6658df76047b4bd2d8ec8c379ca34de6\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2bb356dcb8a3d353236fad5682f3cdcb\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\b22d73475b08ab1584e04a5b1bc50a99\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\e21cb18b66074810a4464977b9d645ec\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6bd66dfe402b4a8302712bac4a7f3531\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -151,10 +148,6 @@ MERGED from [androidx.camera:camera-core:1.1.0-beta03] G:\gradle-8.4-all\gradle-
 MERGED from [androidx.camera:camera-core:1.1.0-beta03] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\76e1850708fe20ab226ceea40b429756\transformed\jetified-camera-core-1.1.0-beta03\AndroidManifest.xml:25:5-36:19
 MERGED from [com.google.android.gms:play-services-tflite-gpu:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c8281cc4f01b9b82861efd7ea454c782\transformed\jetified-play-services-tflite-gpu-16.0.0\AndroidManifest.xml:8:5-22:19
 MERGED from [com.google.android.gms:play-services-tflite-gpu:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c8281cc4f01b9b82861efd7ea454c782\transformed\jetified-play-services-tflite-gpu-16.0.0\AndroidManifest.xml:8:5-22:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:8:5-16:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:8:5-16:19
 MERGED from [com.google.android.gms:play-services-tflite-impl:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\16ae26aca9ca71419b7b64b511ee68bd\transformed\jetified-play-services-tflite-impl-16.0.0\AndroidManifest.xml:8:5-22:19
 MERGED from [com.google.android.gms:play-services-tflite-impl:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\16ae26aca9ca71419b7b64b511ee68bd\transformed\jetified-play-services-tflite-impl-16.0.0\AndroidManifest.xml:8:5-22:19
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:8:5-16:19
@@ -311,10 +304,6 @@ MERGED from [com.google.android.gms:play-services-tflite-gpu:16.0.0] G:\gradle-8
 MERGED from [com.google.android.gms:play-services-tflite-gpu:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c8281cc4f01b9b82861efd7ea454c782\transformed\jetified-play-services-tflite-gpu-16.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:18.0.2] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\0c910bba119487bec53c2104b9b3c00f\transformed\jetified-play-services-mlkit-text-recognition-18.0.2\AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition:18.0.2] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\0c910bba119487bec53c2104b9b3c00f\transformed\jetified-play-services-mlkit-text-recognition-18.0.2\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:6:5-44
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\8d445a60e388e76e6b1b85ea6469961b\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\8d445a60e388e76e6b1b85ea6469961b\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-tflite-support:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\295b89df2e5e2321dadfc8ea6cdd1e97\transformed\jetified-play-services-tflite-support-16.0.0\AndroidManifest.xml:5:5-44
@@ -325,8 +314,6 @@ MERGED from [com.google.android.gms:play-services-tflite-impl:16.0.0] G:\gradle-
 MERGED from [com.google.android.gms:play-services-tflite-impl:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\16ae26aca9ca71419b7b64b511ee68bd\transformed\jetified-play-services-tflite-impl-16.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:6:5-44
 MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:6:5-44
-MERGED from [com.google.mlkit:barcode-scanning-common:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\4599ba7181e977c690fd7b2ba55e8adf\transformed\jetified-barcode-scanning-common-16.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.mlkit:barcode-scanning-common:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\4599ba7181e977c690fd7b2ba55e8adf\transformed\jetified-barcode-scanning-common-16.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:6:5-44
 MERGED from [com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:6:5-44
@@ -393,6 +380,14 @@ MERGED from [androidx.tracing:tracing:1.0.0] G:\gradle-8.4-all\gradle-8.4\caches
 MERGED from [androidx.tracing:tracing:1.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\71c1a669ea5ed4b473ba707824db660c\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.exifinterface:exifinterface:1.3.2] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\d9b027f221db2952ef69042fb9d1c84a\transformed\exifinterface-1.3.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.exifinterface:exifinterface:1.3.2] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\d9b027f221db2952ef69042fb9d1c84a\transformed\exifinterface-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\e817f1c2238f9f78c5f40b095b0e51be\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\e817f1c2238f9f78c5f40b095b0e51be\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2fbbba1268300e6ad2cde9ef2b667b80\transformed\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2fbbba1268300e6ad2cde9ef2b667b80\transformed\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6658df76047b4bd2d8ec8c379ca34de6\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6658df76047b4bd2d8ec8c379ca34de6\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2bb356dcb8a3d353236fad5682f3cdcb\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2bb356dcb8a3d353236fad5682f3cdcb\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:18:5-20:41
@@ -403,14 +398,6 @@ MERGED from [com.google.firebase:firebase-components:16.1.0] G:\gradle-8.4-all\g
 MERGED from [com.google.firebase:firebase-components:16.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\f6eb3cd2caa7ed49c10389f47cb790c1\transformed\jetified-firebase-components-16.1.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\bebea103376ed44a065a4e8f6adfb2f8\transformed\jetified-firebase-encoders-json-17.1.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-encoders-json:17.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\bebea103376ed44a065a4e8f6adfb2f8\transformed\jetified-firebase-encoders-json-17.1.0\AndroidManifest.xml:19:5-21:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\e817f1c2238f9f78c5f40b095b0e51be\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\e817f1c2238f9f78c5f40b095b0e51be\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2fbbba1268300e6ad2cde9ef2b667b80\transformed\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2fbbba1268300e6ad2cde9ef2b667b80\transformed\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6658df76047b4bd2d8ec8c379ca34de6\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6658df76047b4bd2d8ec8c379ca34de6\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2bb356dcb8a3d353236fad5682f3cdcb\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\2bb356dcb8a3d353236fad5682f3cdcb\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\b22d73475b08ab1584e04a5b1bc50a99\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\b22d73475b08ab1584e04a5b1bc50a99\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\e21cb18b66074810a4464977b9d645ec\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -495,42 +482,26 @@ ADDED from [com.google.android.gms:play-services-tflite-gpu:16.0.0] G:\gradle-8.
 		ADDED from [com.google.android.gms:play-services-tflite-gpu:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c8281cc4f01b9b82861efd7ea454c782\transformed\jetified-play-services-tflite-gpu-16.0.0\AndroidManifest.xml:20:17-33
 	android:name
 		ADDED from [com.google.android.gms:play-services-tflite-gpu:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c8281cc4f01b9b82861efd7ea454c782\transformed\jetified-play-services-tflite-gpu-16.0.0\AndroidManifest.xml:19:17-70
-service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
-ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:9:9-15:19
-MERGED from [com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:15:9-23:19
-MERGED from [com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:15:9-23:19
-	android:exported
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:11:13-37
-	tools:targetApi
-		ADDED from [com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:19:13-32
-	android:directBootAware
-		ADDED from [com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:17:13-43
-	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:10:13-91
-meta-data#com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar
-ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:13:17-114
-meta-data#com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar
-ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:12:13-14:85
-	android:value
-		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:14:17-82
-	android:name
-		ADDED from [com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:13:17-120
 meta-data#tflite_dynamite:3:required
 ADDED from [com.google.android.gms:play-services-tflite-impl:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\16ae26aca9ca71419b7b64b511ee68bd\transformed\jetified-play-services-tflite-impl-16.0.0\AndroidManifest.xml:18:13-20:36
 	android:value
 		ADDED from [com.google.android.gms:play-services-tflite-impl:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\16ae26aca9ca71419b7b64b511ee68bd\transformed\jetified-play-services-tflite-impl-16.0.0\AndroidManifest.xml:20:17-33
 	android:name
 		ADDED from [com.google.android.gms:play-services-tflite-impl:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\16ae26aca9ca71419b7b64b511ee68bd\transformed\jetified-play-services-tflite-impl-16.0.0\AndroidManifest.xml:19:17-58
+service#com.google.mlkit.common.internal.MlKitComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:9:9-15:19
+MERGED from [com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:15:9-23:19
+MERGED from [com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:15:9-23:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:11:13-37
+	tools:targetApi
+		ADDED from [com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:19:13-32
+	android:directBootAware
+		ADDED from [com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:17:13-43
+	android:name
+		ADDED from [com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:10:13-91
 meta-data#com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar
 ADDED from [com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:12:13-14:85
 	android:value

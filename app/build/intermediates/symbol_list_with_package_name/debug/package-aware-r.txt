@@ -1948,13 +1948,12 @@ id btnChair
 id btnDesktop
 id btnPerson
 id btnTable
-id btn_layout
+id btnTextR
 id buttonPanel
 id cache_measures
 id camera_container
 id camera_fragment
 id cancel_button
-id capture_image
 id center
 id center_horizontal
 id center_vertical
@@ -2002,7 +2001,6 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id desktopLayout
-id detect_text_image_btn
 id dialog_button
 id dimensions
 id direct
@@ -2068,7 +2066,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id image_view
 id inference_time_label
 id inference_time_val
 id info
@@ -2281,11 +2278,11 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textViewFinder
 id textWatcher
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
-id text_view
 id textinput_counter
 id textinput_error
 id textinput_helper_text
@@ -2314,6 +2311,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvRecognisedText
+id txtPerson
 id unchecked
 id uniform
 id unlabeled

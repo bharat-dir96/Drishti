@@ -186,112 +186,100 @@
 115-->[com.google.android.gms:play-services-tflite-impl:16.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\16ae26aca9ca71419b7b64b511ee68bd\transformed\jetified-play-services-tflite-impl-16.0.0\AndroidManifest.xml:20:17-33
 116        </service>
 117        <service
-117-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:9:9-15:19
+117-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:9:9-15:19
 118            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
-118-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:10:13-91
+118-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:10:13-91
 119            android:directBootAware="true"
 119-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:17:13-43
 120            android:exported="false" >
-120-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:11:13-37
+120-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:11:13-37
 121            <meta-data
-121-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:12:13-14:85
-122                android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar"
-122-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:13:17-114
+121-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:12:13-14:85
+122                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+122-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:13:17-114
 123                android:value="com.google.firebase.components.ComponentRegistrar" />
-123-->[com.google.android.gms:play-services-mlkit-face-detection:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\fd84f0b59d93aa5b24e86c288520512c\transformed\jetified-play-services-mlkit-face-detection-17.0.0\AndroidManifest.xml:14:17-82
+123-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:14:17-82
 124            <meta-data
-124-->[com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:12:13-14:85
-125                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
-125-->[com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:13:17-120
+124-->[com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:12:13-14:85
+125                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+125-->[com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:13:17-124
 126                android:value="com.google.firebase.components.ComponentRegistrar" />
-126-->[com.google.android.gms:play-services-mlkit-barcode-scanning:17.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\eaae7771fa13922752df09ea4da7fbe2\transformed\jetified-play-services-mlkit-barcode-scanning-17.0.0\AndroidManifest.xml:14:17-82
+126-->[com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:14:17-82
 127            <meta-data
-127-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:12:13-14:85
-128                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
-128-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:13:17-114
+127-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:20:13-22:85
+128                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+128-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:21:17-120
 129                android:value="com.google.firebase.components.ComponentRegistrar" />
-129-->[com.google.android.gms:play-services-mlkit-text-recognition-common:18.0.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\38801a6910eb41f45b62e3901f7f2374\transformed\jetified-play-services-mlkit-text-recognition-common-18.0.0\AndroidManifest.xml:14:17-82
-130            <meta-data
-130-->[com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:12:13-14:85
-131                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
-131-->[com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:13:17-124
-132                android:value="com.google.firebase.components.ComponentRegistrar" />
-132-->[com.google.mlkit:vision-common:17.2.1] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\6220fc1e280794c93fb16421feb01604\transformed\jetified-vision-common-17.2.1\AndroidManifest.xml:14:17-82
-133            <meta-data
-133-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:20:13-22:85
-134                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
-134-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:21:17-120
-135                android:value="com.google.firebase.components.ComponentRegistrar" />
-135-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:22:17-82
-136        </service>
+129-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:22:17-82
+130        </service>
+131
+132        <provider
+132-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:9:9-13:38
+133            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+133-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:10:13-78
+134            android:authorities="org.tensorflow.lite.examples.objectdetection.mlkitinitprovider"
+134-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:11:13-69
+135            android:exported="false"
+135-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:12:13-37
+136            android:initOrder="99" />
+136-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:13:13-35
 137
-138        <provider
-138-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:9:9-13:38
-139            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
-139-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:10:13-78
-140            android:authorities="org.tensorflow.lite.examples.objectdetection.mlkitinitprovider"
-140-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:11:13-69
-141            android:exported="false"
-141-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:12:13-37
-142            android:initOrder="99" />
-142-->[com.google.mlkit:common:18.5.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\3772ec870105af15fbfbb38557da61e9\transformed\jetified-common-18.5.0\AndroidManifest.xml:13:13-35
-143
-144        <activity
-144-->[com.google.android.gms:play-services-base:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\14a3a24bc6051f7d03eb986dff2c89f5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
-145            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-145-->[com.google.android.gms:play-services-base:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\14a3a24bc6051f7d03eb986dff2c89f5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
-146            android:exported="false"
-146-->[com.google.android.gms:play-services-base:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\14a3a24bc6051f7d03eb986dff2c89f5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
-147            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-147-->[com.google.android.gms:play-services-base:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\14a3a24bc6051f7d03eb986dff2c89f5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
-148
-149        <meta-data
-149-->[com.google.android.gms:play-services-basement:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\64da32e418b41f36cf478266fe36d5a1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
-150            android:name="com.google.android.gms.version"
-150-->[com.google.android.gms:play-services-basement:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\64da32e418b41f36cf478266fe36d5a1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
-151            android:value="@integer/google_play_services_version" />
-151-->[com.google.android.gms:play-services-basement:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\64da32e418b41f36cf478266fe36d5a1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+138        <activity
+138-->[com.google.android.gms:play-services-base:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\14a3a24bc6051f7d03eb986dff2c89f5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+139            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+139-->[com.google.android.gms:play-services-base:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\14a3a24bc6051f7d03eb986dff2c89f5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+140            android:exported="false"
+140-->[com.google.android.gms:play-services-base:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\14a3a24bc6051f7d03eb986dff2c89f5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+141-->[com.google.android.gms:play-services-base:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\14a3a24bc6051f7d03eb986dff2c89f5\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+142
+143        <meta-data
+143-->[com.google.android.gms:play-services-basement:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\64da32e418b41f36cf478266fe36d5a1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+144            android:name="com.google.android.gms.version"
+144-->[com.google.android.gms:play-services-basement:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\64da32e418b41f36cf478266fe36d5a1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+145            android:value="@integer/google_play_services_version" />
+145-->[com.google.android.gms:play-services-basement:18.1.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\64da32e418b41f36cf478266fe36d5a1\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+146
+147        <provider
+147-->[androidx.lifecycle:lifecycle-process:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\ce50d519c657396bbf9e169deb89ec3b\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+148            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+148-->[androidx.lifecycle:lifecycle-process:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\ce50d519c657396bbf9e169deb89ec3b\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+149            android:authorities="org.tensorflow.lite.examples.objectdetection.lifecycle-process"
+149-->[androidx.lifecycle:lifecycle-process:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\ce50d519c657396bbf9e169deb89ec3b\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+150            android:exported="false"
+150-->[androidx.lifecycle:lifecycle-process:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\ce50d519c657396bbf9e169deb89ec3b\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+151            android:multiprocess="true" />
+151-->[androidx.lifecycle:lifecycle-process:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\ce50d519c657396bbf9e169deb89ec3b\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
 152
-153        <provider
-153-->[androidx.lifecycle:lifecycle-process:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\ce50d519c657396bbf9e169deb89ec3b\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-154            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-154-->[androidx.lifecycle:lifecycle-process:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\ce50d519c657396bbf9e169deb89ec3b\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-155            android:authorities="org.tensorflow.lite.examples.objectdetection.lifecycle-process"
-155-->[androidx.lifecycle:lifecycle-process:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\ce50d519c657396bbf9e169deb89ec3b\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-156            android:exported="false"
-156-->[androidx.lifecycle:lifecycle-process:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\ce50d519c657396bbf9e169deb89ec3b\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-157            android:multiprocess="true" />
-157-->[androidx.lifecycle:lifecycle-process:2.2.0] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\ce50d519c657396bbf9e169deb89ec3b\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-158
-159        <service
-159-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
-160            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-160-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
-161            android:exported="false" >
-161-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
-162            <meta-data
-162-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
-163                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-163-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
-164                android:value="cct" />
-164-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
-165        </service>
-166        <service
-166-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
-167            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-167-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
-168            android:exported="false"
-168-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
-169            android:permission="android.permission.BIND_JOB_SERVICE" >
-169-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
-170        </service>
-171
-172        <receiver
-172-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
-173            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-173-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
-174            android:exported="false" />
-174-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
-175    </application>
-176
-177</manifest>
+153        <service
+153-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:29:9-35:19
+154            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+154-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:30:13-103
+155            android:exported="false" >
+155-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:31:13-37
+156            <meta-data
+156-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:32:13-34:39
+157                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+157-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:33:17-94
+158                android:value="cct" />
+158-->[com.google.android.datatransport:transport-backend-cct:2.3.3] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\5d8d30775cd9223da66e11331ec97457\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:34:17-36
+159        </service>
+160        <service
+160-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:26:9-30:19
+161            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+161-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:27:13-117
+162            android:exported="false"
+162-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:28:13-37
+163            android:permission="android.permission.BIND_JOB_SERVICE" >
+163-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:29:13-69
+164        </service>
+165
+166        <receiver
+166-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:32:9-34:40
+167            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+167-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:33:13-132
+168            android:exported="false" />
+168-->[com.google.android.datatransport:transport-runtime:2.2.6] G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c222cd331d1b47aae2d443ce1296209e\transformed\jetified-transport-runtime-2.2.6\AndroidManifest.xml:34:13-37
+169    </application>
+170
+171</manifest>

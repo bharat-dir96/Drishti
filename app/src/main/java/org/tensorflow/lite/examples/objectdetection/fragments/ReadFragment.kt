@@ -1,122 +1,175 @@
 package org.tensorflow.lite.examples.objectdetection.fragments
 
-import android.content.Intent
-import android.graphics.Bitmap
+import android.Manifest
+import android.annotation.SuppressLint
+import android.content.pm.PackageManager
 import android.os.Bundle
-import android.provider.MediaStore
-import androidx.fragment.app.Fragment
+import android.speech.tts.TextToSpeech
+import android.speech.tts.TextToSpeech.OnInitListener
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import android.widget.Toast
-import com.google.mlkit.vision.common.InputImage
-import com.google.mlkit.vision.text.TextRecognition
-import com.google.mlkit.vision.text.latin.TextRecognizerOptions
-
-import android.speech.tts.TextToSpeech
-import android.speech.tts.TextToSpeech.OnInitListener
-import org.tensorflow.lite.examples.objectdetection.databinding.FragmentReadBinding
+import android.widget.ImageButton
+import androidx.appcompat.app.AlertDialog
+import androidx.camera.core.CameraSelector
+import androidx.camera.core.ImageAnalysis
+import androidx.camera.core.Preview
+import androidx.camera.lifecycle.ProcessCameraProvider
+import androidx.camera.view.PreviewView
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import org.tensorflow.lite.examples.objectdetection.R
 import java.util.Locale
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
 
+class ReadFragment : Fragment(), OnInitListener{
 
-class ReadFragment : Fragment(), OnInitListener {
+    private lateinit var cameraExecutor: ExecutorService
 
-    // update 5 initializing variables
-    private lateinit var binding: FragmentReadBinding
-    private val recognizer = TextRecognition.getClient(TextRecognizerOptions.DEFAULT_OPTIONS)
-    private val REQUEST_IMAGE_CAPTURE = 1
-    private var imageBitmap: Bitmap? = null
     private lateinit var textToSpeech: TextToSpeech
+    private var isTTSInitialized = false
 
+    private lateinit var textViewFinder: PreviewView
+
+
+    private val imageAnalyzer: ImageAnalysis.Analyzer = TextAnalysis()
+    private var imageAnalysis = ImageAnalysis.Builder()
+        .setImageQueueDepth(ImageAnalysis.STRATEGY_BLOCK_PRODUCER)
+        .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
+        .build()
+
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentReadBinding.inflate(inflater, container, false)
-        return binding.root
-    }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        val view =  inflater.inflate(R.layout.fragment_read, container, false)
 
-        binding.apply {         // update 6 - (binding the data according to buttons pressed by user.)
-            captureImage.setOnClickListener {
-                takeImage()
-                textView.text = ""
-            }
-            detectTextImageBtn.setOnClickListener {
-                processImage()
-            }
+        val btnTextR = view.findViewById<ImageButton>(R.id.btnTextR)
+
+        textViewFinder = view.findViewById(R.id.textViewFinder)
+
+        btnTextR.setOnClickListener {
+            startRecognising()
         }
 
-        // Initialize the TextToSpeech engine
-        textToSpeech = TextToSpeech(requireContext(), this)
+        askCameraPermission()
+        startCamera()
+
+        cameraExecutor = Executors.newSingleThreadExecutor()
+
+        return view
+
     }
 
-    // update 7 - (Defining functions for takeImage() and onActivityResult() )
-    private fun takeImage() {
-        val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
-        try {
-            startActivityForResult(intent, REQUEST_IMAGE_CAPTURE)
-        } catch (_: Exception) {
-        }
+    companion object {
+        private const val TAG = "CameraXBasic"
+        const val CAMERA_PERM_CODE = 422
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
+    private fun askCameraPermission() {
+        ActivityCompat.requestPermissions(
+            requireActivity(),
+            arrayOf(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE),
+            CAMERA_PERM_CODE
+        )
+    }
 
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == AppCompatActivity.RESULT_OK) {
-            val extras: Bundle? = data?.extras
-
-            imageBitmap = extras?.get("data") as Bitmap
-
-            if (imageBitmap != null) {
-                binding.imageView.setImageBitmap(imageBitmap)
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        if (requestCode == CAMERA_PERM_CODE) {
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                startCamera()
+            } else {
+                AlertDialog.Builder(requireContext())
+                    .setTitle("Permission Error")
+                    .setMessage("Camera Permission not provided")
+                    .setPositiveButton("OK") { _, _ ->  }
+                    .setCancelable(false)
+                    .show()
             }
         }
+
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
     }
 
+    private fun startCamera() {
+        val cameraProviderFuture = ProcessCameraProvider.getInstance(requireContext())
 
-    // update 7 - (Defining functions for processImage() )
-    private fun processImage() {
-        if (imageBitmap != null) {
-            val image = imageBitmap?.let {
-                InputImage.fromBitmap(it, 0)
+        cameraProviderFuture.addListener({
+            // Used to bind the lifecycle of cameras to the lifecycle owner
+            val cameraProvider: ProcessCameraProvider = cameraProviderFuture.get()
+
+            // Preview
+            val preview = Preview.Builder()
+                .build()
+                .also {
+                    it.setSurfaceProvider(textViewFinder.surfaceProvider)
+                }
+
+            // Select back camera as a default
+            val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
+
+            try {
+                // Unbind use cases before rebinding
+                cameraProvider.unbindAll()
+
+                // Bind use cases to camera
+                cameraProvider.bindToLifecycle(
+                    this, cameraSelector, preview, imageAnalysis)
+
+            } catch (exc: Exception) {
+                Log.e(TAG, "Use case binding failed", exc)
             }
 
-            image?.let {
-                recognizer.process(it)
-                    .addOnSuccessListener { visionText ->
-
-                        binding.textView.text = visionText.text
-                        val textToRead = visionText.text
-                        textToSpeech.speak(textToRead, TextToSpeech.QUEUE_FLUSH, null, null)
-                    }
-                    .addOnFailureListener { e ->
-                        Toast.makeText(requireContext(), "Text recognition failed.", Toast.LENGTH_SHORT).show()
-                    }
-            }
-        }
-        else {
-            Toast.makeText(requireContext(), "Please select a photo", Toast.LENGTH_SHORT).show()
-        }
+        }, ContextCompat.getMainExecutor(requireContext()))
     }
+
 
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
-            // Set the language for text-to-speech (you can change this to your preferred language)
-            val locale = Locale.getDefault()
-            val result = textToSpeech.setLanguage(locale)
+            val result = textToSpeech.setLanguage(Locale.US) // Set the desired language (e.g., US English)
 
             if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                // Handle the case where the language is not available or supported
-                Toast.makeText(requireContext(), "Text-to-speech is not supported in this language.", Toast.LENGTH_SHORT).show()
+                Log.e(TAG, "TextToSpeech initialization failed")
+            } else {
+                isTTSInitialized = true
             }
         } else {
-            // Handle the case where text-to-speech initialization failed
-            Toast.makeText(requireContext(), "Text-to-speech initialization failed.", Toast.LENGTH_SHORT).show()
+            Log.e(TAG, "TextToSpeech initialization failed")
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        textToSpeech.stop()
+        textToSpeech.shutdown()
+        cameraExecutor.shutdown()
+    }
+
+
+    private fun startRecognising() {
+        imageAnalysis.setAnalyzer(
+            ContextCompat.getMainExecutor(requireContext()),
+            imageAnalyzer
+        )
+
+        if (isTTSInitialized) {
+            val textToSpeak = textDone.toString()
+            textToSpeech.speak(textToSpeak, TextToSpeech.QUEUE_FLUSH, null, null)
+        } else {
+            // Handle TTS not initialized
+            Log.e(TAG, "TextToSpeech is not initialized.")
+        }
+    }
+
 }
+
+

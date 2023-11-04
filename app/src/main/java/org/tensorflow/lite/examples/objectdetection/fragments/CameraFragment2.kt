@@ -44,12 +44,9 @@ class CameraFragment2 : Fragment(), ObjectDetectorHelper.DetectorListener {
     private var camera: Camera? = null
     private var cameraProvider: ProcessCameraProvider? = null
 
+
     /** Blocking camera operations are performed using this executor */
     private lateinit var cameraExecutor: ExecutorService
-
-    val findFragment = requireFragmentManager().findFragmentByTag("FindFragment") as FindFragment
-
-    val electronicItemLabels = findFragment.getElectronicItemLabels()
 
     override fun onResume() {
         super.onResume()
@@ -171,13 +168,15 @@ class CameraFragment2 : Fragment(), ObjectDetectorHelper.DetectorListener {
 
         val imageRotation = image.imageInfo.rotationDegrees
         // Pass Bitmap and rotation to the object detector helper for processing and detection
-
-
+        val electronicItemLabels = setOf("tv", "laptop", "mouse", "remote", "keyboard", "cell phone", "microwave oven", "toaster", "refrigerator")
+        //val electronicItemLabels = setOf("टीवी","लैपटॉप","माउस","रिमोट","कीबोर्ड","सेल फोन","माइक्रोवेव","ओवन","टोस्टर","सिंक","फ्रिज","घड़ी")
+//        val myButton = findViewById(R.id.btnDesktop)
+//        myButton.setOnClickListener {
+//            // Handle the button click event
+//            // You can put the code here to respond to the button click
+//
+//        }
         objectDetectorHelper.detect2(bitmapBuffer, imageRotation, electronicItemLabels)
-    }
-
-    fun getBitmapBuffer(): Bitmap {
-        return bitmapBuffer
     }
 
 

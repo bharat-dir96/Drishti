@@ -6,11 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.camera.view.PreviewView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -23,29 +22,20 @@ public final class FragmentReadBinding implements ViewBinding {
   private final FrameLayout rootView;
 
   @NonNull
-  public final LinearLayout btnLayout;
+  public final Button btnTextR;
 
   @NonNull
-  public final Button captureImage;
+  public final PreviewView textViewFinder;
 
   @NonNull
-  public final Button detectTextImageBtn;
+  public final TextView tvRecognisedText;
 
-  @NonNull
-  public final ImageView imageView;
-
-  @NonNull
-  public final TextView textView;
-
-  private FragmentReadBinding(@NonNull FrameLayout rootView, @NonNull LinearLayout btnLayout,
-      @NonNull Button captureImage, @NonNull Button detectTextImageBtn,
-      @NonNull ImageView imageView, @NonNull TextView textView) {
+  private FragmentReadBinding(@NonNull FrameLayout rootView, @NonNull Button btnTextR,
+      @NonNull PreviewView textViewFinder, @NonNull TextView tvRecognisedText) {
     this.rootView = rootView;
-    this.btnLayout = btnLayout;
-    this.captureImage = captureImage;
-    this.detectTextImageBtn = detectTextImageBtn;
-    this.imageView = imageView;
-    this.textView = textView;
+    this.btnTextR = btnTextR;
+    this.textViewFinder = textViewFinder;
+    this.tvRecognisedText = tvRecognisedText;
   }
 
   @Override
@@ -75,38 +65,26 @@ public final class FragmentReadBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_layout;
-      LinearLayout btnLayout = ViewBindings.findChildViewById(rootView, id);
-      if (btnLayout == null) {
+      id = R.id.btnTextR;
+      Button btnTextR = ViewBindings.findChildViewById(rootView, id);
+      if (btnTextR == null) {
         break missingId;
       }
 
-      id = R.id.capture_image;
-      Button captureImage = ViewBindings.findChildViewById(rootView, id);
-      if (captureImage == null) {
+      id = R.id.textViewFinder;
+      PreviewView textViewFinder = ViewBindings.findChildViewById(rootView, id);
+      if (textViewFinder == null) {
         break missingId;
       }
 
-      id = R.id.detect_text_image_btn;
-      Button detectTextImageBtn = ViewBindings.findChildViewById(rootView, id);
-      if (detectTextImageBtn == null) {
+      id = R.id.tvRecognisedText;
+      TextView tvRecognisedText = ViewBindings.findChildViewById(rootView, id);
+      if (tvRecognisedText == null) {
         break missingId;
       }
 
-      id = R.id.image_view;
-      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
-      if (imageView == null) {
-        break missingId;
-      }
-
-      id = R.id.text_view;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
-        break missingId;
-      }
-
-      return new FragmentReadBinding((FrameLayout) rootView, btnLayout, captureImage,
-          detectTextImageBtn, imageView, textView);
+      return new FragmentReadBinding((FrameLayout) rootView, btnTextR, textViewFinder,
+          tvRecognisedText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

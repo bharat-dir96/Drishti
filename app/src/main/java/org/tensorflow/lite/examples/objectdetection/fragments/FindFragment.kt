@@ -2,12 +2,15 @@ package org.tensorflow.lite.examples.objectdetection.fragments
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.LinearLayout
+import android.widget.TextView
 import org.tensorflow.lite.examples.objectdetection.R
 import org.tensorflow.lite.examples.objectdetection.ObjectDetectorHelper
 import java.io.InputStream
@@ -32,9 +35,6 @@ class FindFragment : Fragment() {
 
     private lateinit var objectDetectorHelper: ObjectDetectorHelper
 
-    val cameraFragment2 = requireFragmentManager().findFragmentByTag("CameraFragment") as CameraFragment2
-    val bitmapBuffer = cameraFragment2.getBitmapBuffer()
-
     // Define a variable to hold electronicItemLabels
     private var electronicItemLabels: Set<String> = emptySet()
 
@@ -56,14 +56,16 @@ class FindFragment : Fragment() {
         val view =  inflater.inflate(R.layout.fragment_find, container, false)
 
         // Attach click listeners to your ImageButtons
-        val btnPerson = view.findViewById<ImageButton>(R.id.btnPerson)
+        val personLayout = view.findViewById<LinearLayout>(R.id.personLayout)
         val btnChair = view.findViewById<ImageButton>(R.id.btnChair)
         val btnBottle = view.findViewById<ImageButton>(R.id.btnBottle)
         val btnDesktop = view.findViewById<ImageButton>(R.id.btnDesktop)
         val btnTable = view.findViewById<ImageButton>(R.id.btnTable)
 
-        btnPerson.setOnClickListener {
+        personLayout.setOnClickListener {
+            val txtPerson = personLayout.findViewById<TextView>(R.id.txtPerson)
 
+            txtPerson.setTextColor(Color.parseColor("#FF0000"))
         }
         btnChair.setOnClickListener {
 
@@ -72,9 +74,6 @@ class FindFragment : Fragment() {
 
         }
         btnDesktop.setOnClickListener {
-            electronicItemLabels = setOf("tv", "laptop")
-
-            objectDetectorHelper.detect2(bitmapBuffer, 0,electronicItemLabels)
 
         }
         btnTable.setOnClickListener {
@@ -83,11 +82,6 @@ class FindFragment : Fragment() {
 
         return view
 
-    }
-
-
-    fun getElectronicItemLabels(): Set<String> {
-        return electronicItemLabels
     }
 
     // Define a function to load a Bitmap from a resource ID

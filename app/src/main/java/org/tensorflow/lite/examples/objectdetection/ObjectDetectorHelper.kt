@@ -40,8 +40,6 @@ class ObjectDetectorHelper(
 
     val vibrator: Vibrator = context.getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
 
-
-
 ) {
 
     private val TAG = "ObjectDetectionHelper"
