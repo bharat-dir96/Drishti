@@ -1,8 +1,8 @@
-org.tensorflow.lite.examples.objectdetection.test.app-androidTest-0 G:\android_play_services\app\build\generated\res\resValues\androidTest\debug
-org.tensorflow.lite.examples.objectdetection.test.app-androidTest-1 G:\android_play_services\app\build\generated\res\rs\androidTest\debug
-org.tensorflow.lite.examples.objectdetection.test.app-mergeDebugAndroidTestResources-2 G:\android_play_services\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-org.tensorflow.lite.examples.objectdetection.test.app-mergeDebugAndroidTestResources-3 G:\android_play_services\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-org.tensorflow.lite.examples.objectdetection.test.app-merged_res-4 G:\android_play_services\app\build\intermediates\merged_res\debugAndroidTest
-org.tensorflow.lite.examples.objectdetection.test.app-androidTest-5 G:\android_play_services\app\src\androidTest\res
-org.tensorflow.lite.examples.objectdetection.test.app-androidTestDebug-6 G:\android_play_services\app\src\androidTestDebug\res
-org.tensorflow.lite.examples.objectdetection.test.app-jetified-annotation-experimental-1.1.0-7 G:\gradle-8.4-all\gradle-8.4\caches\transforms-3\c7a75abb6beb4219696d0b11828240bb\transformed\jetified-annotation-experimental-1.1.0\res
+org.tensorflow.lite.examples.objectdetection.test.app-jetified-annotation-experimental-1.1.0-0 C:\Users\bhara\.gradle\caches\transforms-3\41b96b4a060e6fe37e0c1f08f25e5e3c\transformed\jetified-annotation-experimental-1.1.0\res
+org.tensorflow.lite.examples.objectdetection.test.app-androidTest-1 D:\Drishti\Drishti\app\build\generated\res\resValues\androidTest\debug
+org.tensorflow.lite.examples.objectdetection.test.app-androidTest-2 D:\Drishti\Drishti\app\build\generated\res\rs\androidTest\debug
+org.tensorflow.lite.examples.objectdetection.test.app-mergeDebugAndroidTestResources-3 D:\Drishti\Drishti\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+org.tensorflow.lite.examples.objectdetection.test.app-mergeDebugAndroidTestResources-4 D:\Drishti\Drishti\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+org.tensorflow.lite.examples.objectdetection.test.app-merged_res-5 D:\Drishti\Drishti\app\build\intermediates\merged_res\debugAndroidTest
+org.tensorflow.lite.examples.objectdetection.test.app-androidTest-6 D:\Drishti\Drishti\app\src\androidTest\res
+org.tensorflow.lite.examples.objectdetection.test.app-androidTestDebug-7 D:\Drishti\Drishti\app\src\androidTestDebug\res

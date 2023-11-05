@@ -54,8 +54,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:taskAffinity=""
-        android:testOnly="true" >
+        android:taskAffinity="" >
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
             android:value="ocr" />

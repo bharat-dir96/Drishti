@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-3:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
+            "outputFile": "org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-33:/values-h360dp-land-v13/values-h360dp-land-v13.xml",
             "map": [
                 {
-                    "source": "G:\\gradle-8.4-all\\gradle-8.4\\caches\\transforms-3\\99173f44f7e3d7026afde3124f46135f\\transformed\\material-1.4.0\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
+                    "source": "C:\\Users\\bhara\\.gradle\\caches\\transforms-3\\9cb625b91221de6a8c3e011a5e03dc50\\transformed\\material-1.4.0\\res\\values-h360dp-land-v13\\values-h360dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

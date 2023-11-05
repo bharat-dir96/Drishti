@@ -10,8 +10,9 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
+import android.widget.Button
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.widget.AppCompatButton
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.Preview
@@ -34,7 +35,6 @@ class ReadFragment : Fragment(), OnInitListener{
 
     private lateinit var textViewFinder: PreviewView
 
-
     private val imageAnalyzer: ImageAnalysis.Analyzer = TextAnalysis()
     private var imageAnalysis = ImageAnalysis.Builder()
         .setImageQueueDepth(ImageAnalysis.STRATEGY_BLOCK_PRODUCER)
@@ -49,7 +49,7 @@ class ReadFragment : Fragment(), OnInitListener{
 
         val view =  inflater.inflate(R.layout.fragment_read, container, false)
 
-        val btnTextR = view.findViewById<ImageButton>(R.id.btnTextR)
+        val btnTextR = view.findViewById<Button>(R.id.btnTextR)
 
         textViewFinder = view.findViewById(R.id.textViewFinder)
 
@@ -59,6 +59,8 @@ class ReadFragment : Fragment(), OnInitListener{
 
         askCameraPermission()
         startCamera()
+
+        textToSpeech = TextToSpeech(requireContext(), this)
 
         cameraExecutor = Executors.newSingleThreadExecutor()
 

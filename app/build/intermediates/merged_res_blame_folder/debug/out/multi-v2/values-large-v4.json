@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-3:/values-large-v4/values-large-v4.xml",
+            "outputFile": "org.tensorflow.lite.examples.objectdetection.app-mergeDebugResources-33:/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "G:\\gradle-8.4-all\\gradle-8.4\\caches\\transforms-3\\715fe8ea36a250495e97f3c9666f78f4\\transformed\\appcompat-1.3.1\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\bhara\\.gradle\\caches\\transforms-3\\ebb881474e6f4d91cf913df66592d508\\transformed\\appcompat-1.3.1\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "G:\\gradle-8.4-all\\gradle-8.4\\caches\\transforms-3\\99173f44f7e3d7026afde3124f46135f\\transformed\\material-1.4.0\\res\\values-large-v4\\values-large-v4.xml",
+                    "source": "C:\\Users\\bhara\\.gradle\\caches\\transforms-3\\9cb625b91221de6a8c3e011a5e03dc50\\transformed\\material-1.4.0\\res\\values-large-v4\\values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
